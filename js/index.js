@@ -27,12 +27,12 @@ const options = {
         .then((response) => {
             btnLoading.classList.toggle("d-none");
             btnData.classList.toggle("d-none");
-            document.querySelector("#location").innerHTML = "Weather in " + response.location.name;
-            document.querySelector("#date").innerHTML =
+            document.querySelector("#location").innerHTML = '<i class="fa-solid fa-location-dot"></i>' + response.location.name;
+            document.querySelector("#date").innerHTML = '<i class="fa-regular fa-calendar-days"></i>' +
               response.forecast.forecastday[0].date;
-            document.querySelector("#condition").innerHTML =
+            document.querySelector("#condition").innerHTML = '<i class="fa-solid fa-cloud"></i>' +
               response.forecast.forecastday[0].hour[23].condition.text;
-            document.querySelector("#temp").innerHTML =
+            document.querySelector("#temp").innerHTML = '<i class="fa-solid fa-temperature-three-quarters"></i>' +
               response.forecast.forecastday[0].hour[23].temp_c + "°C";
             dataInfo.classList.remove("d-none");;
         })

@@ -8,5 +8,5 @@ $(function() {
         showAnim: 'slideDown',
         showButtonPanel: true,
         closeText: "Close",
-    })//.datepicker("setDate", new Date());
+    })
 } );
