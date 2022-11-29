@@ -129,6 +129,11 @@ body{
 #inputElement:active{
     border-color: #1d9ffc;
   }
-#location, #date, #condition, #temp {
+  #date, #condition, #temp {
     font-size: 22px;
+    margin-top: -10px !important;
+}
+#location {
+  font-size: 50px;
+  font-weight: bold;
 }
