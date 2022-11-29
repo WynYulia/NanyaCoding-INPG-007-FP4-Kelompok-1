@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Nanya Coding | Weather App</title>
-    <link rel="icon" sizes="180x180" href="img/favicon-96x96.png" />
+    <link rel="icon" sizes="180x180" href="img/favicon-96x96.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -15,33 +15,38 @@
 </head>
 
 <body>
+    <div class="main">
+        <div class="text"><b>WEATHER FORECAST</b><span><img class="tes" src="img/sun.png" alt="icon-NC"></span></div>
+        <div class="title"><b>BY NANYACODING</b></div>
+        <div class="bar">
+          <div id="fill"></div>
+        </div>
+      </div>
     <div class="wrapper">
-        <h1 class="text-center mt-3">Weather App</h1>
-        <form action="" class="formData text-center mt-4">
+        <h1 class="text-center mt-3 txt-wrp"><b>WEATHER FORECAST</b></h1>
+        <form class="formData text-center mt-4">
             <input type="text" class="mb-2" id="inputElement" placeholder="Location">
             <input type="text" placeholder="Date" class="date-box mb-2" id="inputDate">
             <button type="submit" id="btn_data" class="btn btn-primary btn-submit">Submit</button>
             <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                 Loading...
-              </button>
+            </button>
         </form>
-            <div id="data_info" class="mt-2 d-none">
-                <h1 id="location" class="text-center">Location</h1>
-                <h1 id="date" class="text-center mt-3">10-10-2020</h1>
-                <h1 id="condition" class="text-center mt-3">Lembab</h1>
-                <h1 id="temp" class="text-center mt-3">32C</h1>
-            </div>
+        <div id="data_info" class="mt-2 d-none">
+            <p id="location" class="text-center">Location</p>
+            <p id="date" class="text-center mt-3">10-10-2020</p>
+            <p id="condition" class="text-center mt-3">Lembab</p>
+            <p id="temp" class="text-center mt-3">32C</p>
         </div>
-    </body>
-    <script
-    src="https://code.jquery.com/jquery-3.6.1.js"
-    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous">
-</script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+        crossorigin="anonymous">
+    </script>
     <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/loader.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="js/index.js"></script>
-
+</body>
 </html>
