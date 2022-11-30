@@ -3,9 +3,6 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
   background: #d6e4e5;
 }
 .main {
@@ -66,9 +63,9 @@ body {
   left: 0px;
 }
 .wrapper {
-  margin: 30px;
-  top: 50%;
-  left: 50%;
+  margin-right: 30%;
+  margin-left: 32%;
+  justify-content: center;
   transform: translate(0%, 10%);
   width: 500px;
   height: 500px;
@@ -139,17 +136,9 @@ body {
   font-size: 50px;
   font-weight: bold;
 }
-#chart1 {
-  margin-top: 50%;
-  height: 50%;
-  width: 50%;
-}
-#chart2 {
-  margin-top: 50%;
-}
-#chart3 {
-  margin-top: 50%;
-}
-#chart4 {
-  margin-top: 50%;
+
+.chart {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
 }
