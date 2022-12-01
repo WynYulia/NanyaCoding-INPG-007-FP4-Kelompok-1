@@ -139,6 +139,16 @@ body {
 
 .chart {
   margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
+}
+
+#chart1,
+#chart2,
+#chart3,
+#chart4 {
+  background-color: #fff;
+  margin-right: 1%;
+  
 }
